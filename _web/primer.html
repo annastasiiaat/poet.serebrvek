@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Передвигающееся меню сайта</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    nav {
+        background-color: #333;
+        color: white;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        transition: top 0.3s;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav li {
+        display: inline;
+    }
+    nav a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+    }
+    main {
+        margin-top: 50px;
+        height: 2000px; /* Для демонстрации */
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Содержимое страницы -->
+    </main>
+</body>
+</html>
